@@ -21,4 +21,10 @@ export const env = {
   seedDemoData: (process.env.SEED_DEMO_DATA ?? "true") === "true",
   seedSuperAdminEmail: process.env.SEED_SUPER_ADMIN_EMAIL ?? "admin@amaderkanchana.local",
   seedSuperAdminPassword: process.env.SEED_SUPER_ADMIN_PASSWORD ?? "change_this_password",
+  sslcommerz: {
+  storeId: process.env.SSLCZ_STORE_ID ?? "",
+  storePassword: process.env.SSLCZ_STORE_PASSWORD ?? "",
+  isLive: process.env.SSLCZ_IS_LIVE === "true",
+},
+frontendUrl: process.env.FRONTEND_URL ?? "http://localhost:5173",
 };
