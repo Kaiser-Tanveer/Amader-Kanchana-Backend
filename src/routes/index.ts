@@ -10,6 +10,9 @@ import partnerRoutes from "./partnerRoutes";
 import authRoutes from "./authRoutes";
 import dashboardRoutes from "./dashboardRoutes";
 import settingsRoutes from "./settingsRoutes";
+import donationRoutes from "./donationRoutes";
+import campaignRoutes from "./campaignRoutes";
+import memberRoutes from "./memberRoutes";
 
 const router = Router();
 
@@ -24,5 +27,8 @@ router.use("/partners", partnerRoutes);
 router.use("/auth", authRoutes);
 router.use("/dashboard", dashboardRoutes);
 router.use("/settings", settingsRoutes);
+router.use("/donations", donationRoutes);
+router.use("/campaigns", campaignRoutes);
+router.use("/members", memberRoutes);
 
 export default router;
